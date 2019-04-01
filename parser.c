@@ -246,7 +246,7 @@ void parse_file ( char * filename,
     else if ( strncmp(line, "save", strlen(line)) == 0 ) {
       //printf("SAVE\t%s", line);
       fgets(line, sizeof(line), f);
-      line[strlen(line)-2]='\0';      
+      line[strlen(line)-1]='\0';      
       //printf("name: %s\n", line);
       clear_screen(s);
       draw_lines(edges, s, c);
